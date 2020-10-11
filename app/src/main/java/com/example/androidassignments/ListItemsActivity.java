@@ -137,62 +137,6 @@ public class ListItemsActivity extends AppCompatActivity {
         }
     }
 
-    //public Switch s = (Switch) findViewById(R.id.switch1);
-    //
-//    public void onCheckedChangeListener(CompoundButton buttonView, boolean isChecked) {
-//        Toast.makeText(this, "The Switch is " + (isChecked ? "on" : "off"),
-//                Toast.LENGTH_SHORT).show();
-//        if(isChecked) {
-//                //do stuff when Switch is ON
-//        } else {
-//            //do stuff when Switch if OFF
-//        }
-//
-//    }
-//    CompoundButton.OnCheckedChangeListener listener = new CompoundButton.OnCheckedChangeListener() {
-//
-//        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-//
-//                CharSequence text = "";
-//                int duration;
-//                if (isChecked) {
-//                    text = "Switch is On";// "Switch is Off"
-//                    duration = Toast.LENGTH_SHORT; //= Toast.LENGTH_LONG if Off
-//
-//
-//
-//                } else {
-//
-//                    text = "Switch is Off";// "Switch is Off"
-//                    duration = Toast.LENGTH_LONG; //= Toast.LENGTH_LONG if Off
-//
-//                }
-//            //Toast.makeText(this, "The Switch is " + (isChecked ? "on" : "off"), Toast.LENGTH_SHORT).show(); //this is the ListActivity
-//            Toast toast=Toast.makeText(ListItemsActivity.this,text,duration);
-//            toast.show(); //display your message box
-//        }
-//    };
-
-
-//
-//
-//        if (s.isChecked() == true) {
-//            CharSequence text = "Switch is On";
-//            int duration = Toast.LENGTH_SHORT;
-//            Toast toast = Toast.makeText(this, text, duration); //this is the ListActivity
-//            toast.show(); //display your message box
-//
-//
-//        } else {
-//            CharSequence text = "Switch is off";
-//            int duration = Toast.LENGTH_LONG;
-//            Toast toast = Toast.makeText(this, text, duration); //this is the ListActivity
-//            toast.show(); //display your message box
-//
-//        }
-//        //CharSequence text = "Switch is On";// "Switch is Off"
-//        // int duration = Toast.LENGTH_SHORT; //= Toast.LENGTH_LONG if Off
-
 
 
 
