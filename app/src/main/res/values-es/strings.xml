@@ -6,4 +6,8 @@
     <string name="ButtonText">soy un boton</string>
     <string name="login_Text">iniciar sesión</string>
     <string name= "password_Text">contraseña</string>
+    <string name= "dialog_message">dialog message</string>
+    <string name= "dialog_title">dialog_title</string>
+    <string name= "ok">ok</string>
+    <string name= "cancel">cancel</string>
 </resources>
