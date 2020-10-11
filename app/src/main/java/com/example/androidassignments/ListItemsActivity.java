@@ -24,14 +24,13 @@ public class ListItemsActivity extends AppCompatActivity {
     protected static final String ACTIVITY_NAME = "ListItemsActivity";
     static final int REQUEST_IMAGE_CAPTURE = 1;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_items);
         Log.i(ACTIVITY_NAME, "In onCreate()");
 
-        Switch sw = (Switch) findViewById(R.id.switch1);
+        Switch sw =  findViewById(R.id.switch1);
         sw.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -51,7 +50,7 @@ public class ListItemsActivity extends AppCompatActivity {
             }
         });
 
-        CheckBox checkbox = (CheckBox) findViewById(R.id.checkBox);
+        CheckBox checkbox = findViewById(R.id.checkBox);
         checkbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
             @Override
@@ -59,22 +58,19 @@ public class ListItemsActivity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(ListItemsActivity.this);
                 // 2. Chain together various setter methods to set the dialog characteristics
 
-
-                // 2. Chain together various setter methods to set the dialog characteristics
                 builder.setMessage(R.string.dialog_message) //Add a dialog message to strings.xml
 
                         .setTitle(R.string.dialog_title)
-                        .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                        .setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 // User clicked OK button
                                 Intent resultIntent = new Intent(  );
                                 resultIntent.putExtra("Response", "Here is my response");
                                 setResult(Activity.RESULT_OK, resultIntent);
                                 finish();
-
                             }
                         })
-                        .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                        .setNegativeButton(R.string.CANCEL, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 // User cancelled the dialog
                             }
@@ -128,7 +124,7 @@ public class ListItemsActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        ImageButton imageButton = (ImageButton) findViewById(R.id.imageButton2);
+        ImageButton imageButton = findViewById(R.id.imageButton2);
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
