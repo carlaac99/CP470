@@ -3,5 +3,7 @@
 <resources>
     <string name="app_name">AndroidAssignments</string>
     <string name="hello_message">Hola!</string>
-<string name="ButtonText">soy un boton</string>
-    </resources>
+    <string name="ButtonText">soy un boton</string>
+    <string name="login_Text">iniciar sesión</string>
+    <string name= "password_Text">contraseña</string>
+</resources>
