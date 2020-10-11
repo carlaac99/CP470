@@ -2,16 +2,22 @@ package com.example.androidassignments;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     protected static final String ACTIVITY_NAME = "MainActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i(ACTIVITY_NAME, "In onCreate()");
+        Button button= (Button)findViewById(R.id.button);
     }
     @Override
     protected void onResume() {
@@ -45,5 +51,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.i(ACTIVITY_NAME, "In onDestroy()");
+    }
+
+    public void clickHandler(View view){
+
+        Intent intent = new Intent(MainActivity.this, ListItemsActivity.class);
+
+        startActivityForResult(intent,10);
+
+    }
+
+    public void onActivityResult(int requestCode,int responseCode,Intent data){
+        super.onActivityResult(requestCode,responseCode,data);
+        if (requestCode==0){
+            Log.i(ACTIVITY_NAME,"Returned to MainActivity.onActivityResult");
+        }
+
     }
 }

@@ -37,6 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:gravity="fill"
+        android:onClick="onClickImage"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
 

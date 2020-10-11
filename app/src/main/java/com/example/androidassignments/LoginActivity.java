@@ -2,6 +2,7 @@ package com.example.androidassignments;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -14,19 +15,25 @@ public class LoginActivity extends AppCompatActivity {
     protected static final String ACTIVITY_NAME = "LoginActivity";
     private Object DefaultEmail;
     //private Button button;
-    private EditText EditText;
-    SharedPreferences shared = null;
+     //private EditText ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        final String defaultEmail = shared.getString("DefaultEmail", "email@domain.com");
+        Log.i(ACTIVITY_NAME, "In onCreate()");
+
+        SharedPreferences shared = getSharedPreferences("Login", Context.MODE_PRIVATE);
+        SharedPreferences.Editor edit=shared.edit();
+        edit.putString("DefaultEmail","email@domain.com");
+        edit.commit();
+
     }
     @Override
     protected void onResume() {
         super.onResume();
-        Log.i(ACTIVITY_NAME, "In onCreate()");
+        Log.i(ACTIVITY_NAME, "In onResume()");
     }
 
     @Override
@@ -53,7 +60,17 @@ public class LoginActivity extends AppCompatActivity {
         Log.i(ACTIVITY_NAME, "In onDestroy()");
     }
     public void saveEmail(View view){
-        final String userEmail = shared.getString("DefaultEmail",EditText.toString());
+        SharedPreferences shared = getSharedPreferences("Login", Context.MODE_PRIVATE);
+        SharedPreferences.Editor edit=shared.edit();
+
+        EditText text= (EditText)findViewById(R.id.login_email);
+        edit.putString("userEmail",text.getText().toString());
+        edit.commit();
+
+        //Log.i(ACTIVITY_NAME,shared.getString("DefaultEmail", null));
+
+
+
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);
 
