@@ -11,26 +11,28 @@
     tools:context=".ListItemsActivity">
     <RadioButton
         android:id="@+id/radioButton"
+        android:text="@string/RadioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:gravity="fill"
-        android:text="RadioButton" />
+        />
     <CheckBox
         android:id="@+id/checkBox"
+        android:text="@string/CheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:gravity="fill"
-        android:text="CheckBox" />
+        />
     <Switch
         android:id="@+id/switch1"
+        android:text="@string/Switch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:gravity="fill"
-
-        android:text="What does this do?" />
+        />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -40,10 +42,6 @@
         android:gravity="fill"
         android:onClick="onClickImage"
         app:srcCompat="@android:drawable/ic_menu_camera" />
-
-
-
-
 
 
 </GridLayout>

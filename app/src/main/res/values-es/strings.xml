@@ -4,10 +4,16 @@
     <string name="app_name">AndroidAssignments</string>
     <string name="hello_message">Hola!</string>
     <string name="ButtonText">soy un boton</string>
+    <string name="Button">boton</string>
     <string name="login_Text">iniciar sesión</string>
+    <string name="login_Name">nombre de iniciar</string>
     <string name= "password_Text">contraseña</string>
+    <string name= "password_Hint">contraseña</string>
     <string name= "dialog_message">Quieres continuar la actividad?</string>
     <string name= "dialog_title">continar actividad?</string>
     <string name= "OK">@android:string/ok</string>
     <string name= "CANCEL">cancelar</string>
+    <string name="RadioButton">RadioBoton</string>
+    <string name= "CheckBox">Caja</string>
+    <string name= "Switch">Que hace esto?</string>
 </resources>
