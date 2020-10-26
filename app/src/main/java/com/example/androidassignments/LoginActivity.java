@@ -16,6 +16,9 @@ public class LoginActivity extends AppCompatActivity {
     private Object DefaultEmail;
     //private Button button;
      //private EditText ;
+    Button login;
+    EditText login_email;
+    SharedPreferences shared;
 
 
     @Override
@@ -23,11 +26,25 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         Log.i(ACTIVITY_NAME, "In onCreate()");
-
-        SharedPreferences shared = getSharedPreferences("Login", Context.MODE_PRIVATE);
+        login=findViewById(R.id.button);
+        login_email=findViewById(R.id.login_email);
+        shared = getSharedPreferences("Login", Context.MODE_PRIVATE);
         SharedPreferences.Editor edit=shared.edit();
         edit.putString("DefaultEmail","email@domain.com");
         edit.commit();
+
+        String result=shared.getString("userEmail","");
+        if (result.equals("")) {
+
+            login_email.setText(shared.getString("DefaultEmail", ""));
+
+        }
+        else{
+            login_email.setText(shared.getString("userEmail",""));
+
+        }
+
+
 
     }
     @Override
@@ -60,7 +77,7 @@ public class LoginActivity extends AppCompatActivity {
         Log.i(ACTIVITY_NAME, "In onDestroy()");
     }
     public void saveEmail(View view){
-        SharedPreferences shared = getSharedPreferences("Login", Context.MODE_PRIVATE);
+//        SharedPreferences shared = getSharedPreferences("Login", Context.MODE_PRIVATE);
         SharedPreferences.Editor edit=shared.edit();
 
         EditText text= (EditText)findViewById(R.id.login_email);
