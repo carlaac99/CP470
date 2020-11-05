@@ -72,6 +72,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void startTestToolbar(View view){
+
+        Log.i(ACTIVITY_NAME,"User clicked Start Chat");
+
+        Intent intent = new Intent(MainActivity.this, TestToolbar.class);
+
+        startActivityForResult(intent,10);
+
+    }
+
     public void onActivityResult(int requestCode,int responseCode,Intent data){
         super.onActivityResult(requestCode,responseCode,data);
         if (requestCode==0){

@@ -72,15 +72,15 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.i(ACTIVITY_NAME, "In onDestroy()");
-    }
-    public void saveEmail(View view){
+        protected void onDestroy() {
+            super.onDestroy();
+            Log.i(ACTIVITY_NAME, "In onDestroy()");
+        }
+        public void saveEmail(View view){
 //        SharedPreferences shared = getSharedPreferences("Login", Context.MODE_PRIVATE);
-        SharedPreferences.Editor edit=shared.edit();
+            SharedPreferences.Editor edit=shared.edit();
 
-        EditText text= (EditText)findViewById(R.id.login_email);
+            EditText text= (EditText)findViewById(R.id.login_email);
         edit.putString("userEmail",text.getText().toString());
         edit.commit();
 

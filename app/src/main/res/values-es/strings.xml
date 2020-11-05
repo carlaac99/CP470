@@ -18,4 +18,17 @@
     <string name= "Switch">Que hace esto?</string>
     <string name= "StartChat">Iniciar Chat</string>
     <string name="Send">enviar</string>
+    <string name="next">Siguiente</string>
+    <string name="previous">Anterior</string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+    <string name="dialog_title2">regresar?</string>
+    <string name="fragment_second">v</string>
+    <string name="second_fragment_label">v</string>
+    <string name="fragment_first">v</string>
+    <string name="first_fragment_label">v</string>
+    <string name="new_message">Nuevo mensaje</string>
+    <string name="TestToolbar">barra de herramientas</string>
+    <string name="One">Uno</string>
+    <string name="Two">Dos</string>
+    <string name="Three">Tres</string>
 </resources>

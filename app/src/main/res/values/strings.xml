@@ -17,4 +17,26 @@
     <string name="Switch">What does this do?</string>
     <string name="StartChat">Start Chat</string>
     <string name="Send">Send</string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+    <string name="dialog_title2">Do you want to go back?</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="new_message">New Message</string>
+    <string name="TestToolbar">Test Toolbar</string>
+    <string name="One">One</string>
+    <string name="Two">Two</string>
+    <string name="Three">Three</string>
+
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="fragment_second">cdcdv</string>
+    <string name="second_fragment_label">v</string>
+    <string name="fragment_first">cdcv</string>
+    <string name="first_fragment_label">v</string>
+
+
+
+
+
 </resources>

@@ -55,6 +55,7 @@ public class ChatWindow extends AppCompatActivity {
         public String getItem(int position){
             return messages.get(position);
         }
+
         public View getView (int position, View convertView, ViewGroup parent){
             LayoutInflater inflater= ChatWindow.this.getLayoutInflater();
             View result=null;
@@ -74,4 +75,3 @@ public class ChatWindow extends AppCompatActivity {
     }
 
 }
-
