@@ -67,8 +67,8 @@ public class TestToolbar extends AppCompatActivity {
             case(R.id.action_two):
                 Log.d("Toolbar", "Option 2 selected");
 
-                Snackbar.make(fab, "You selected item 2", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+//                Snackbar.make(fab, "You selected item 2", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 //builder.setTitle(R.string.pick_color);
@@ -118,12 +118,6 @@ public class TestToolbar extends AppCompatActivity {
                                Editable value = input.getText();
                                message=value.toString();
                                //setContentView(R.layout.activity_test_toolbar);
-
-
-
-
-
-
                             }
                         })
                         .setNegativeButton(R.string.CANCEL, new DialogInterface.OnClickListener() {
