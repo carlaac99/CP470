@@ -66,7 +66,7 @@ public class ChatWindow extends AppCompatActivity {
 
 
         for(int columnIndex=0; columnIndex< cursor.getColumnCount(); columnIndex++ ){
-            Log.i(ACTIVITY_NAME,cursor.getColumnName(columnIndex));
+            Log.i(ACTIVITY_NAME,"column name "+cursor.getColumnName(columnIndex));
 
         }
         cursor.close();
