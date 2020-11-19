@@ -74,9 +74,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void startTestToolbar(View view){
 
-        Log.i(ACTIVITY_NAME,"User clicked Start Chat");
+        Log.i(ACTIVITY_NAME,"User clicked Toolbar");
 
         Intent intent = new Intent(MainActivity.this, TestToolbar.class);
+
+        startActivityForResult(intent,10);
+
+    }
+    public void startWeatherForecast(View view){
+
+        Log.i(ACTIVITY_NAME,"User clicked WeatherForecast");
+
+        Intent intent = new Intent(MainActivity.this, WeatherForecast.class);
 
         startActivityForResult(intent,10);
 

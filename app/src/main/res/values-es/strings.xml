@@ -31,4 +31,9 @@
     <string name="One">Uno</string>
     <string name="Two">Dos</string>
     <string name="Three">Tres</string>
+    <string name="Weather">Clima</string>
+    <string name="currentTemp">Temperatura actual</string>
+    <string name="minTemp">Temperatura mínima</string>
+    <string name="maxTemp">Temperatura máxima</string>
+    <string name="pickCity">elige una ciudad</string>
 </resources>
