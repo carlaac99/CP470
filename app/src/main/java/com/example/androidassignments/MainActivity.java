@@ -84,8 +84,9 @@ public class MainActivity extends AppCompatActivity {
     public void startWeatherForecast(View view){
 
         Log.i(ACTIVITY_NAME,"User clicked WeatherForecast");
-
         Intent intent = new Intent(MainActivity.this, WeatherForecast.class);
+
+
 
         startActivityForResult(intent,10);
 

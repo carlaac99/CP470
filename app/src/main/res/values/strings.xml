@@ -31,6 +31,15 @@
     <string name="minTemp">Minimum temperature</string>
     <string name="maxTemp">Maximum temperature</string>
     <string name="pickCity">Pick a city</string>
+    <string name="fragment_second">cdcdv</string>
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="second_fragment_label">v</string>
+    <string name="fragment_first">cdcv</string>
+    <string name="first_fragment_label">v</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
     <string-array name="cities">
         <item>Abbotsford</item>
 
@@ -527,13 +536,6 @@
         <item>Yorkton</item>
 
     </string-array>
-
-
-    <!-- Strings used for fragments for navigation -->
-    <string name="fragment_second">cdcdv</string>
-    <string name="second_fragment_label">v</string>
-    <string name="fragment_first">cdcv</string>
-    <string name="first_fragment_label">v</string>
 
 
 </resources>
